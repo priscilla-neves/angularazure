@@ -1,0 +1,16 @@
+<div *ngIf="!loginDisplay" class="sign-in">
+  <h1>9Box</h1>
+  <h2>Welcome to GFT Performance Evaluation!</h2>
+  <p>Please sign-in to see your profile information and access the platform.</p>
+</div>
+
+<div *ngIf="loginDisplay">
+  <div class="container">
+    <div class="box"><a mat-button [routerLink]="['profile']">Profile</a></div>
+    <div class="box"><a mat-button [routerLink]="['profile']">Configurações</a></div>
+    <div class="box"><a mat-button [routerLink]="['profile']">Avaliações</a></div>
+    <div class="box"><a mat-button [routerLink]="['profile']">Recurso 04</a></div>
+    <div class="box"><a mat-button [routerLink]="['profile']">Recurso 05</a></div>
+    <div class="box"><a mat-button [routerLink]="['profile']">Recurso 06</a></div>
+  </div>
+</div>
