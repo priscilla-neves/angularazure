@@ -25,7 +25,7 @@ export class RoleGuardService implements CanActivate {
       window.alert('Este token não está vinculado a nenhuma role, acesso recusado.');
       return false;
     } else if (!account.idTokenClaims?.roles?.includes(expectedRole)) {
-      window.alert('Você não tem acesso a esta funcionalidade.');
+      window.alert('Você não tem acesso a esta funcionalidade. Esse recurso não será renderizado na tela caso a role não tenha acesso a ele, está aqui como ilustração de proteção da rota.');
       return false;
     }
 

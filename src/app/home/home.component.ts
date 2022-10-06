@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MsalBroadcastService, MsalService } from '@azure/msal-angular';
-import { EventMessage, EventType, InteractionStatus } from '@azure/msal-browser';
+import { AccountInfo, EventMessage, EventType, InteractionStatus } from '@azure/msal-browser';
 import { filter } from 'rxjs/operators';
+
+interface Account extends AccountInfo {
+  idTokenClaims?: {
+    roles?: string[]
+  }
+}
 
 @Component({
   selector: 'app-home',
@@ -12,6 +18,12 @@ export class HomeComponent implements OnInit {
   loginDisplay = false;
 
   constructor(private authService: MsalService, private msalBroadcastService: MsalBroadcastService) { }
+
+  isAdmin() : boolean {
+    let account: Account = this.authService.instance.getAllAccounts()[0];
+    if(account.idTokenClaims?.roles[0] === "User.Admin") return true
+    else return false
+  }
 
   ngOnInit(): void {
     this.msalBroadcastService.msalSubject$
