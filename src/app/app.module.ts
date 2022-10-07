@@ -15,12 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { MsalModule, MsalRedirectComponent, MsalGuard, MsalInterceptor } from '@azure/msal-angular'; // Import MsalInterceptor
 import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
 import { AdvicesComponent } from './advices/advices.component';
-import { JwtModule } from '@auth0/angular-jwt';
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
-export function tokenGetter() {
-  return localStorage.getItem("access_token");
-}
 
 @NgModule({
   declarations: [

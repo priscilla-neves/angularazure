@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { JwtHelperService } from '@auth0/angular-jwt';
 
 const GRAPH_ENDPOINT = 'https://graph.microsoft.com/v1.0/me';
 
