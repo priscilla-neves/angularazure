@@ -1,0 +1,11 @@
+.corpo-botoes{
+  display: flex;
+  gap: 10px;
+
+}
+
+.avaliar-icone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

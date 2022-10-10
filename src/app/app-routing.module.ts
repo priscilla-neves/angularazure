@@ -5,6 +5,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { MsalGuard } from '@azure/msal-angular';
 import { AdvicesComponent } from './advices/advices.component';
 import { RoleGuardService } from './role-guard.service';
+import { HeaderComponent } from './componentes/header/header.component';
 
 const routes: Routes = [
   {

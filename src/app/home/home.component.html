@@ -1,16 +1,69 @@
+
+ <app-header></app-header>
 <div *ngIf="!loginDisplay" class="sign-in">
   <h1>9Box</h1>
   <h2>Welcome to GFT Performance Evaluation!</h2>
   <p>Please sign-in to see your profile information and access the platform.</p>
 </div>
 
-<div *ngIf="loginDisplay">
-  <div class="container">
+
+<!-- <section class="flex">
+     
+  <div class="box-1"></div>
+  <div class="box-1"></div>
+  <div class="box-1"></div>
+  <div class="box-1"></div>
+  <div class="box-1"></div><div class="box-1"></div><div class="box-1"></div>
+ 
+</section> -->
+
+
+
+<!-- <section class="flex">
+      
+      <div class="box-2"></div>
+      <div class="box-2"></div>
+      <div class="box-2"></div>
+      <div class="box-2"></div>
+      <div class="box-2"></div>
+      <div class="box-2"></div>
+      
+</section> -->
+<div class=" container" *ngIf="loginDisplay">
+  <section class="grid">
+    <div class="box-0"><a mat-button [routerLink]="">My Profile</a></div>
+    <div class="box-1"></div>
+    <div class="box-1"></div>
+    <div class="box-1"></div>
+    <div class="box-1"></div>
+    <div class="box-1"></div>
+    <div class="box-1"></div>
+  </section>
+</div>
+
+
+
+<div class=" container" *ngIf="loginDisplay">
+  <section class="flex">
+    <div class="box-0"><a mat-button [routerLink]="">My Profile</a></div>
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+    <div class="box-2"></div>
+  </section>
+</div>
+
+
+
+  <!-- <div class="container">
     <div *ngIf="isAdmin()"><div class="box"><a mat-button [routerLink]="['profile']">Profile ADMIN</a></div></div>
-    <div class="box"><a mat-button [routerLink]="['advices']">Advices GESTOR</a></div>
-    <div class="box"><a mat-button [routerLink]="">Avaliações</a></div>
-    <div class="box"><a mat-button [routerLink]="">Recurso 04</a></div>
+    <div class="box-1"><a mat-button [routerLink]="">My Profile</a></div>
+    <div class="box-2"><a mat-button [routerLink]="">Avaliações</a></div>
+    <div class="box-3"><a mat-button [routerLink]="">Recurso 04</a></div>
     <div class="box"><a mat-button [routerLink]="">Recurso 05</a></div>
     <div class="box"><a mat-button [routerLink]="">Recurso 06</a></div>
-  </div>
-</div>
+    <div class="box"><a mat-button [routerLink]="['advices']">Advices GESTOR</a></div>
+  </div> -->
