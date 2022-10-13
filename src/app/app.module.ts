@@ -19,6 +19,8 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { PrimeiraTelaComponent } from './componentes/primeira-tela/primeira-tela.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+ 
 
 const isIE = window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
 export function tokenGetter() {
@@ -42,7 +44,9 @@ export function tokenGetter() {
     MatToolbarModule,
     MatListModule,
     MatIconModule,
+    MatMenuModule,
     HttpClientModule,
+    
     MsalModule.forRoot( new PublicClientApplication({
       auth: {
         clientId: '8041545d-1c84-4b1b-9ff3-39b0e8076cf2',

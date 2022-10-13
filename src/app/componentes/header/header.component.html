@@ -1,4 +1,4 @@
-<mat-toolbar class="toolbar">
+<!-- <mat-toolbar class="toolbar">
     <a class="toolbar__logo" routerLink="">
         <img class="toolbar__imagem" src="/assets/logogft.jpg" alt="">
     </a>
@@ -9,9 +9,9 @@
       <mat-icon class="toobar__logout">logout</mat-icon>
      
     </button>
-<!--     <mat-icon class="toolbar__icon">account_circle</mat-icon>   -->
+    <mat-icon class="toolbar__icon">account_circle</mat-icon>   
       
-</mat-toolbar>
+</mat-toolbar> -->
 
  <!--       <button mat-raised-button *ngIf="loginDisplay" (click)="logout()">Logout</button> -->
  
@@ -21,3 +21,41 @@
 
          <!--  <a class="title" href="/">{{ title }}</a>
         <div class="toolbar-spacer"></div> -->
+
+        <mat-toolbar class="mat-elevation-z10" fxLayout="row">
+            <!-- <div>
+                <a class="valign-center" mat-icon-button [routerLink]="['']">
+                    <mat-icon>home</mat-icon>
+                    <div style="margin-right:20px;">Jeff Schoonover</div>
+                </a> 
+            </div>
+            <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxHide.xs>
+                <ul fxLayout fxLayoutGap="20px" class="menu-items">
+                    <li><a [routerLink]="['/about']">About</a></li>
+                    <li><a [routerLink]="['/learn']">Learn in Public</a></li>
+                    <li><a [routerLink]="['/projects']">Projects</a></li>
+                </ul>
+            </div> -->
+           <!--  <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" fxHide.gt-xs>
+                <a class="valign-center" mat-icon-button [matMenuTriggerFor]="menu" aria-label="additional links">
+                    <mat-icon>more_vert</mat-icon>
+                </a>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item [routerLink]="['/about']">About</button>
+                    <button mat-menu-item [routerLink]="['/learn']">Learn in Public</button>
+                    <button mat-menu-item [routerLink]="['/projects']">Projects</button>
+                </mat-menu>
+            </div> -->
+
+            <a class="toolbar__logo" routerLink="">
+                <img class="toolbar__imagem" src="/assets/logogft.jpg" alt="">
+            </a>
+                
+            <button  mat-raised-button *ngIf="!loginDisplay" (click)="login()">Login</button>
+            
+            <button *ngIf="loginDisplay" mat-icon-button (click)="logout()">
+              <mat-icon class="toobar__logout">logout</mat-icon> 
+            </button>
+        </mat-toolbar>
+
+      <!--   <mat-icon>input</mat-icon> -->

@@ -1,69 +1,7 @@
-.grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 1000px;
-  margin: 0 auto;
-  grid-gap: 15px;
-  flex-wrap: wrap;
-  padding: 10px;
- 
-  
- 
-}
-.grid >div{
-  flex : 0 0 0
-  
-}
-.grid2{
-  width: 410;
-  height: 620;
-  flex-wrap: wrap;
-  background: #0098B0;
-
-}
-
-
-
-
-
-
-
-
-.flex{
-  display:flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: 0 auto;
-  flex-direction:row  
-  
-}
-.flex1{
-  display:flex;
-  flex-wrap: wrap;
-  max-width: 500;
-  margin: 0 auto;
-  flex-direction:row 
-
-
-}
-
-.flex > div {
-  flex: 1 1 200px;
-  margin: 10px;
-  flex-grow: 0;
-}
-
-
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
-
-
 .container {
   width: auto;
   height: 100vh;
-  background: #f5f6f7;
+  background: #F2F2F2;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -71,114 +9,109 @@
   flex-wrap: wrap;
 }
 
+.flex{
+  display:flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-direction:row;
+  background: #F2F2F2;
+  justify-content: flex-start;
+  
+}
 
-.box-0 {
-  width: 300px;
-  height: 408px;
-  background: #0098B0;
-  box-shadow: 6px 6px 6px  #6C7A89;
-  grid-column: 1;
-  grid-row:1/4;
-  margin-left: 10px;
-  margin-right: 10px;
-  
-}
-.box-00 {
-  width: 408;
-  height: 300px;
-  background: #0098B0;
-  box-shadow: 6px 6px 6px  #6C7A89;
-  grid-column: 1;
-  grid-row:1/4;
-  margin-left: 10px;
-  margin-right: 10px;
+.flex > div {
+  margin: 10px;
   flex-grow: 0;
-  align-self: flex-start;  
-  
 }
-.box-1{
+.box-0{
   background: #213E7F;
-  width: 200px;
-  height: 200px;
-  display: block;
-  max-width: 100%;
+  width: 250px;
+  height: 250px;
   box-shadow: 6px 6px 6px  #6C7A89;
-  flex-grow: 0;
-   
- 
+  border-radius: 3px;
+}
+.box-0:hover {
+  border: px solid #6C7A89;
+  transform: scale(1); 
+  box-shadow: 1px 5px 15px rgba(34, 34, 34, 0.6);
+  
+}
+.box-1 {
+  width: 420px;
+  height: 200px;
+  background: #213E7F;
+  box-shadow: 6px 6px 6px  #6C7A89;
+  border-radius: 3px;
+}
+.box-1:hover {
+  border: px solid #6C7A89;
+  transform: scale(1); 
+  box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
 .box-2{
-  background: #0098B0;
+  background: #B2D4F1;
   width: 200px;
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
   box-shadow: 6px 6px 6px  #6C7A89;
-  
-  
-
+  border-radius: 3px;
 }
-.box-3{
-  background: #0097D9;
+.box-2:hover {
+  border: px solid #6C7A89;
+  transform: scale(1); 
+  box-shadow: 1px 5px 15px rgba(34, 34, 34, 0.6);
+  background-color: #a4cdf0;
+}
+.font-box{
+  color: white;
+  font-family: Arial;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 50%;
+} 
+.font-boxes{
+ color: white;
+ font-family: Arial;
+ font-size: 25px;
+ text-align: left;
+ padding-top: 12px;
+ padding-left: 20px;
+ 
+}
+.font-boxes1{ 
+  color: #0f1f41;
+  font: Arial;
+  font-size: 20px;
+  margin-top: 5px;
+  text-align: left;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.box2 > mat-button{
   width: 200px;
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  flex-wrap: wrap;
-  box-shadow: 6px 6px 6px  #6C7A89;
-
-}
-.box-4{
-  background: #063144;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  box-shadow: 6px 6px 6px  #6C7A89;
-
-}
-.example-card {
-  max-width: 400px;
-  background: #063144;
-}
-/* .box {
-  width: 225px;
-  height: 225px;
-  background: #0098B0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 6px 6px 6px  #6C7A89;
 }
 
-.box-1 {
-  width: 350px;
-  height: 450px;
+.icons{
+color: #F2F2F2;
+font-size: 40px;
+display: flex;
+width: auto;
+height: auto;
+padding: 90px 20px;
+justify-content: flex-end;
+}
 
-  background: #DADADA;
+.icons1{
+  color:#496094;
+  font-size: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 6px 6px 6px  #6C7A89;
-} */
-
-
-
-
-
+  width: auto;
+  height: auto;
+  padding: 90px 20px;
+  justify-content: flex-end;
+  }
 
 body {
   margin: 0px;
@@ -193,4 +126,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+
 
